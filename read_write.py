@@ -24,6 +24,7 @@ def load_credentials():
         
     Raises:
         JSONDecodeError: An error ocurred with the JSON format.
+        FileNotFoundError: File containing the credentials not found.
     """
     credentials_path = os.path.join(os.getcwd(), 'keys\keys.json')
     credentials = {}
