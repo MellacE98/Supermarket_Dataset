@@ -1,5 +1,6 @@
-def main():
-    pass
+from crawlers.spiders.quotes_spider import QuotesSpiderSpider
+from scrapy.crawler import CrawlerProcess
 
-if name == '__main__':
-    main()
+process = CrawlerProcess()
+process.crawl(QuotesSpiderSpider)
+process.start()

@@ -1,7 +1,5 @@
 import os 
 import json
-from typing import final
-
 
 def load_credentials():
     """Loads account credentials into a dictionary.
@@ -40,4 +38,3 @@ def load_credentials():
     else:
         return credentials
 
-print(load_credentials())
